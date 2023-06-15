@@ -23,58 +23,56 @@
     <main>
         <div class="control">
             <div class="select">
-                <select>
-                    <option>Workout Type</option>
-                    <option>Cardio</option>
-                    <option>Olympic Weightlifting</option>
-                    <option>Plyometrics</option>
-                    <option>Powerlifting</option>
-                    <option>Strength</option>
-                    <option>Stretching</option>
-                    <option>Strongman</option>
+                <select id="typeForm">
+                    <option value="random" selected>Workout Type</option>
+                    <option value="cardio">Cardio</option>
+                    <option value="olympic_weightlifting">Olympic Weightlifting</option>
+                    <option value="plyometrics">Plyometrics</option>
+                    <option value="powerlifting">Powerlifting</option>
+                    <option value="strength">Strength</option>
+                    <option value="stretching">Stretching</option>
+                    <option value="strongman">Strongman</option>
+
                 </select>
             </div>
         </div>
 
         <div class="control">
             <div class="select">
-                <select>
-                    <option>Muscle Group</option>
-                    <option>Abdominals</option>
-                    <option>Adductors</option>
-                    <option>Biceps</option>
-                    <option>Calves</option>
-                    <option>Chest</option>
-                    <option>Forearms</option>
-                    <option>Glutes</option>
-                    <option>Hamstrings</option>
-                    <option>Lats</option>
-                    <option>Lower_back</option>
-                    <option>Middle_back</option>
-                    <option>Neck</option>
-                    <option>Quadriceps</option>
-                    <option>Traps</option>
-                    <option>Triceps</option>
+                <select id="muscleForm">
+                    <option value="random" selected>Muscle Group</option>
+                    <option value="abdominals">Abdominals</option>
+                    <option value="adductors">Adductors</option>
+                    <option value="biceps">Biceps</option>
+                    <option value="calves">Calves</option>
+                    <option value="chest">Chest</option>
+                    <option value="forearms">Forearms</option>
+                    <option value="glutes">Glutes</option>
+                    <option value="hamstrings">Hamstrings</option>
+                    <option value="lats">Lats</option>
+                    <option value="lower_back">Lower_back</option>
+                    <option value="middle_back">Middle_back</option>
+                    <option value="neck">Neck</option>
+                    <option value="quadriceps">Quadriceps</option>
+                    <option value="traps">Traps</option>
+                    <option value="triceps">Triceps</option>
                 </select>
             </div>
         </div>
 
         <div class="control">
             <div class="select">
-                <select>
-                    <option>Difficulty</option>
-                    <option>Easy</option>
-                    <option>Medium</option>
-                    <option>Hard</option>
+                <select id="difficultyForm">
+                    <option value="random" selected>Difficulty</option>
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
                 </select>
             </div>
         </div>
+        <button id="confirmButton" type="button">Confirm Info</button>
+
     </main>
-
-
-
-
-
 
 
     <footer>
@@ -83,13 +81,14 @@
             <a href="https://www.facebook.com" target="_blank">Facebook</a>
             <a href="https://github.com/someone" target="_blank">Github</a>
             <a href="https://twitter.com/" target="_blank">Twitter</a>
-            <a href="https://www.youtube.com/" target="_blank">Youttube</a>
+            <a href="https://www.youtube.com/" target="_blank">YouTube</a>
             <a href="https://www.instagram.com" target="_blank">Instagram</a>
         </nav>
 
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
