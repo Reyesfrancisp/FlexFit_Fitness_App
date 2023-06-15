@@ -25,9 +25,9 @@
     <main>
         <h2>Why FlexFit? </h2>
         <p> FlexFit offers personalized workout plans tailored to individual needs and goals.
-             Users can input their workout type, level, and other relevant information, 
-             allowing the app to generate customized exercise routines that suit their 
-             specific requirements.</p>
+            Users can input their workout type, level, and other relevant information,
+            allowing the app to generate customized exercise routines that suit their
+            specific requirements.</p>
     </main>
 
     <aside>
@@ -38,19 +38,19 @@
 
         <input type="text" placeholder="Age:"> -->
 
-        <button class="button is-link is large" id="button" >Link</button>
+        <button class="button is-link is large" id="button">Link</button>
 
-        <div class="modal" id="display-modal" >
+        <div class="modal" id="display-modal">
             <div class="modal-background"></div>
             <div class="modal-content">
-                
-               <section class="section-style" > 
+
+                <section class="section-style">
 
                     <!-- Name -->
                     <div class="field">
                         <label class="label">Name</label>
                         <div class="control">
-                            <input class="input" type="text" placeholder="e.g Alex Smith">
+                            <input id="nameInput" class="input" type="text" placeholder="e.g Alex Smith">
                         </div>
                     </div>
 
@@ -58,7 +58,7 @@
                     <div class="field">
                         <label class="label">Age</label>
                         <div class="control">
-                            <input class="input" type="email" placeholder="e.g. 18">
+                            <input id="ageInput" class="input" type="email" placeholder="e.g. 18">
                         </div>
                     </div>
 
@@ -66,32 +66,33 @@
                     <div class="field">
                         <label class="label">Email</label>
                         <div class="control">
-                          <input class="input" type="email" placeholder="e.g. someone12@gmail.com">
+                            <input id="emailInput" class="input" type="email" placeholder="e.g. someone12@gmail.com">
                         </div>
-                      </div>
+                    </div>
 
-                      <!-- Height -->
+                    <!-- Height -->
                     <div class="field">
                         <label class="label">Height</label>
                         <div class="control">
-                            <input class="input" type="email" placeholder="e.g. 5'3">
+                            <input id="heightInput" class="input" type="email"
+                                placeholder="e.g. Height in Inches (66 in)">
                         </div>
                     </div>
 
                     <!-- Weight -->
                     <div class="field">
-                        <label class="label">Weight</label>
+                        <label id="weightInput" class="label">Weight</label>
                         <div class="control">
-                            <input class="input" type="email" placeholder="e.g. 160 lbs">
+                            <input class="input" placeholder="e.g. 160 lbs">
                         </div>
                     </div>
 
-                    <input class="button" type="submit" value="Submit input">
+                    <input id="infoButtonSubmit" class="button" type="submit" value="Submit input">
                 </section>
 
             </div>
             <button class="modal-close is-large" aria-label="close"></button>
-          </div>
+        </div>
 
     </aside>
 
@@ -131,7 +132,9 @@
         </nav>
 
     </footer>
-    <script src="js/script.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 
