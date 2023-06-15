@@ -9,6 +9,14 @@
     text-align: center;
 }
 
+.section-style {
+    background: white;
+    position: fixed;
+    width: 650px;
+    top: 30px;
+    padding: 20px;
+}
+
 html, body {
     height: 100%;
 
