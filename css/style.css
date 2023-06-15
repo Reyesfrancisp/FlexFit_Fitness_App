@@ -1,1 +1,8 @@
 /* styles for the pages */
+.section-style {
+    background: white;
+    position: fixed;
+    width: 650px;
+    top: 30px;
+    padding: 20px;
+}
