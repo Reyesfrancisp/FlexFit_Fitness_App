@@ -1,3 +1,10 @@
+
+
+//global scoped variables to contain the info being passed from the functions
+var userData;
+var workoutData;
+
+
 // Scripts for pages
 
 function getUserInfoModal() {
@@ -41,3 +48,19 @@ function getUserWorkoutInfo() {
 
     return workoutInfo; //return the object
 }
+
+//initialize the event listeners
+function pageInitialize() {
+    $("#infoButtonSubmit").click(function () {
+        userData = getUserInfoModal();
+        console.log(userData);
+    });
+
+    $("#confirmButton").click(function () {
+        workoutData = getUserWorkoutInfo();
+        console.log(workoutData);
+    });
+}
+
+//run after the document is ready
+$(document).ready(pageInitialize());
