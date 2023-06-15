@@ -1,4 +1,41 @@
-// Scripts for pages
+
+
+//global scoped variables to contain the info being passed from the functions
+var userData;
+var workoutData;
+var baseURL = "https://type.fit/api/quotes";+
+
+//This is for the modal in app.html
+
+var button = document.getElementById('button');
+var displayModal = document.getElementById('display-modal');
+var close = document.getElementsByClassName('modal-close')[0];
+
+//When you click the button , the modal pops out
+button.onclick = function() {
+    displayModal.style.display = 'block';   
+}
+
+//When you click the x the modal close
+close.onclick = function() {
+    displayModal.style.display = 'none';   
+}
+
+//When you click the background the modal close
+window.onclick = function(event) {
+    if (event.target.className === 'modal-background') {
+        displayModal.style.display = 'none';
+    }
+}
+
+
+
+//script for generating a random quote
+$.get(baseURL).then(function(data) {
+    var updatedData = JSON.parse(data);
+    var randomNum = Math.floor(Math.random() * updatedData.length);
+    console.log(updatedData[randomNum].text);
+  });
 
 function getUserInfoModal() {
     var userInfo = {
@@ -41,3 +78,19 @@ function getUserWorkoutInfo() {
 
     return workoutInfo; //return the object
 }
+
+//initialize the event listeners
+function pageInitialize() {
+    $("#infoButtonSubmit").click(function () {
+        userData = getUserInfoModal();
+        console.log(userData);
+    });
+
+    $("#confirmButton").click(function () {
+        workoutData = getUserWorkoutInfo();
+        console.log(workoutData);
+    });
+}
+
+//run after the document is ready
+$(document).ready(pageInitialize());

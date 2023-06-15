@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlexFit App</title>
     <link rel="stylesheet" href="./css/exercises.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
 </head>
 
 <body>
@@ -29,14 +32,66 @@
 
     <aside>
         <h2>About you</h2>
-        <input type="text" placeholder="Name:">
-        <input type="text" placeholder="Age:">
-        <input type="text" placeholder="Workout Type:">
-        <input type="text" placeholder="level:">
-        
 
+        <!-- <input type="text" placeholder="Name:">
+        <input type="text" placeholder="Last Name:">
 
-        <button>Start</button>
+        <input type="text" placeholder="Age:"> -->
+
+        <button class="button is-link is large" id="button" >Link</button>
+
+        <div class="modal" id="display-modal" >
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                
+               <section class="section-style" > 
+
+                    <!-- Name -->
+                    <div class="field">
+                        <label class="label">Name</label>
+                        <div class="control">
+                            <input class="input" type="text" placeholder="e.g Alex Smith">
+                        </div>
+                    </div>
+
+                    <!-- Age -->
+                    <div class="field">
+                        <label class="label">Age</label>
+                        <div class="control">
+                            <input class="input" type="email" placeholder="e.g. 18">
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="field">
+                        <label class="label">Email</label>
+                        <div class="control">
+                          <input class="input" type="email" placeholder="e.g. someone12@gmail.com">
+                        </div>
+                      </div>
+
+                      <!-- Height -->
+                    <div class="field">
+                        <label class="label">Height</label>
+                        <div class="control">
+                            <input class="input" type="email" placeholder="e.g. 5'3">
+                        </div>
+                    </div>
+
+                    <!-- Weight -->
+                    <div class="field">
+                        <label class="label">Weight</label>
+                        <div class="control">
+                            <input class="input" type="email" placeholder="e.g. 160 lbs">
+                        </div>
+                    </div>
+
+                    <input class="button" type="submit" value="Submit input">
+                </section>
+
+            </div>
+            <button class="modal-close is-large" aria-label="close"></button>
+          </div>
 
     </aside>
 
@@ -76,6 +131,8 @@
         </nav>
 
     </footer>
+    <script src="js/script.js" ></script>
+
 </body>
 
 </html>
