@@ -1,0 +1,68 @@
+
+body {
+    background-image: url("../css/images/dummbbell.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 50% auto; 
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left-column {
+    align-self: flex-start;
+  }
+  
+  .right-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  /* Estilos específicos para el aside */
+  aside {
+    width: 30%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 20px;
+  }
+  
+  aside input[type="text"],
+  aside button {
+    margin-bottom: 10px;
+  }
+  
+  /* Estilos específicos para el header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  /* Estilos específicos para el article */
+  article {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  article h2 {
+    margin-top: 0;
+  }
+  
+  /* Estilos específicos para el footer */
+  footer {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  footer nav a {
+    margin-right: 10px;
+  }
