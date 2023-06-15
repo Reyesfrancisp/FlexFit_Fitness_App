@@ -3,7 +3,7 @@
 //global scoped variables to contain the info being passed from the functions
 var userData;
 var workoutData;
-var baseURL = "https://type.fit/api/quotes";+
+var baseURL = "https://type.fit/api/quotes";
 
 //This is for the modal in app.html
 
