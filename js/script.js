@@ -21,3 +21,23 @@ function getUserInfoModal() {
 
     return userInfo; //return the object
 }
+
+function getUserWorkoutInfo() {
+    //target the form IDs
+    var selectedType = $("#typeForm").val();
+    var selectedMuscle = $("#muscleForm").val();
+    var selectedDifficulty = $("#difficultyForm").val();
+    console.log("Selected Type: " + selectedType);
+    console.log("Selected Muscle: " + selectedMuscle);
+    console.log("Selected Difficulty: " + selectedDifficulty);
+    var workoutInfo = {
+        type: "",
+        muscle: "",
+        difficulty: ""
+    }
+    workoutInfo.type = selectedType;
+    workoutInfo.muscle = selectedMuscle;
+    workoutInfo.difficulty = selectedDifficulty;
+
+    return workoutInfo; //return the object
+}
