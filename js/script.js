@@ -94,3 +94,42 @@ function pageInitialize() {
 
 //run after the document is ready
 $(document).ready(pageInitialize());
+
+
+
+var muscle = workoutData.muscle;
+var type = workoutData.type;
+var difficulty = workoutData.difficulty;
+
+function getExercises() {
+  var exerciseByMuscle = [];
+  var finalExerciseList = [];
+
+  $.ajax({
+    method: "GET",
+    url: "https://api.api-ninjas.com/v1/exercises?muscle=" + muscle,
+    headers: { "X-Api-Key": "uzXoqXKJQzocibLJBGGrFw==5EMXvqAyhQA7R36e" },
+    contentType: "application/json",
+    success: function (result) {
+      exerciseByMuscle = result;
+      count = 0;
+      while (count < exerciseByMuscle.length) {
+        if (
+          exerciseByMuscle[count].type == type &&
+          exerciseByMuscle[count].difficulty == difficulty
+        ) {
+          finalExerciseList.push(exerciseByMuscle[count]);
+        }
+        count++;
+      }
+    },
+    error: function ajaxError(jqXHR) {
+      console.error("Error: ", jqXHR.responseText);
+    },
+  });
+
+
+  return finalExerciseList;
+}
+
+console.log(getExercises());

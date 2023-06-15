@@ -1,0 +1,69 @@
+/* styles for the pages */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.text-center {
+    text-align: center;
+}
+
+html, body {
+    height: 100%;
+
+}
+
+body{
+    background-image: url(../images/Stocksy-woman-happy-dance-HEX.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.button{
+    position: absolute;
+    top: 70%;
+    left: 72%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border-radius: 23px ;
+    width: 22%;
+    padding: 0.5rem;
+    box-shadow: 2 4px 6px rgba(0, 0, 0, 0.4);
+    transition: transform 0.5s ease-in-out;
+   
+}
+.button:hover{
+   transform: scale(1.4);
+}
+
+h1{
+    font-family: 'Aoboshi One', serif;
+    font-size: 6rem;
+    position: absolute;
+    top: 10%;
+    left: 5%
+
+}
+ 
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
