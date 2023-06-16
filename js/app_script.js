@@ -50,11 +50,21 @@ function getUserInfoModal() {
     return userInfo; //return the object
   }
 
+
+  function addToLocal() {
+    localStorage.setItem("Name", $("#nameInput").val());
+    localStorage.setItem("Age", $("#ageInput").val());
+    localStorage.setItem("Height", $("#heightInput").val());
+    localStorage.setItem("Weight", $("#weightInput").val());
+    localStorage.setItem("E-mail", $("#emailInput").val());
+  }
+
   function pageInitialize() {
   
     $("#infoButtonSubmit").click(function () {
       userData = getUserInfoModal();
       console.log(userData);
+      addToLocal();
     });
   }
 
