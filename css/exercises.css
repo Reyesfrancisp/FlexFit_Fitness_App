@@ -48,8 +48,13 @@ aside {
 }
 
  footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform:translateX(-50%);
   text-align: center;
   padding: 20px;
+
 }
 
  header {
@@ -79,7 +84,9 @@ aside {
 }
 
  button {
-  margin-top: 10px;
+  
+  margin: 10px;
+  
 }
 
  .modal {
