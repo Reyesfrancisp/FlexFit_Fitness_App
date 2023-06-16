@@ -84,75 +84,9 @@
                         <h1 class="title is-4">Update Info</h1>
                         <button class="button is-link is large" id="button">Update</button>
 
-                        <div class="modal" id="display-modal">
-                            <div class="modal-background"></div>
-                            <div class="modal-content">
-
-                                <section class="section-style">
-                                    <p class="description">Please Fill In Your information!</p>
-
-
-                                    <!-- Name -->
-                                    <div class="field">
-                                        <label class="label">Name</label>
-                                        <div class="control">
-                                            <input id="nameInput" class="input" type="text"
-                                                placeholder="e.g Alex Smith">
-                                        </div>
-                                    </div>
-
-                                    <!-- Age -->
-                                    <div class="field">
-                                        <label class="label">Age</label>
-                                        <div class="control">
-                                            <input id="ageInput" class="input" type="email" placeholder="e.g. 18">
-                                        </div>
-                                    </div>
-
-                                    <!-- Email -->
-                                    <div class="field">
-                                        <label class="label">Email</label>
-                                        <div class="control">
-                                            <input id="emailInput" class="input" type="email"
-                                                placeholder="e.g. someone12@gmail.com">
-                                        </div>
-                                    </div>
-
-                                    <!-- Height -->
-                                    <div class="field">
-                                        <label class="label">Height</label>
-                                        <div class="control">
-                                            <input id="heightInput" class="input" type="email"
-                                                placeholder="e.g. 63(in inches)">
-                                        </div>
-                                    </div>
-
-                                    <!-- Weight -->
-                                    <div class="field">
-                                        <label class="label">Weight</label>
-                                        <div class="control">
-                                            <input id="weightInput" class="input" type="email"
-                                                placeholder="e.g. 160 lbs">
-                                        </div>
-                                    </div>
-
-                                    <button id="infoButtonSubmit"
-                                        class="button is-block is-primary is-fullwidth is-medium">Submit</button>
-                                    <br />
-                                    <small><em>Click Submit To Save Your Information</em></small>
-                                </section>
-
-                            </div>
-                            <button class="modal-close is-large" aria-label="close"></button>
-                        </div>
-                        </form>
-                    </div>
                 </div>
             </div>
-            <div class="column is-8 is-offset-2">
-                <br>
-
-            </div>
+         
         </div>
         </div>
 
@@ -229,6 +163,69 @@
         </nav>
 
     </footer>
+
+
+    <div class="modal modal-background modal-content" id="display-modal">
+
+        <section class="section-style">
+            <p class="description">Please Fill In Your information!</p>
+            <!-- Name -->
+            <div class="field">
+                <label class="label">Name</label>
+                <div class="control">
+                    <input id="nameInput" class="input" type="text"
+                        placeholder="e.g Alex Smith">
+                </div>
+            </div>
+
+            <!-- Age -->
+            <div class="field">
+                <label class="label">Age</label>
+                <div class="control">
+                    <input id="ageInput" class="input" type="email" placeholder="e.g. 18">
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                    <input id="emailInput" class="input" type="email"
+                        placeholder="e.g. someone12@gmail.com">
+                </div>
+            </div>
+
+            <!-- Height -->
+            <div class="field">
+                <label class="label">Height</label>
+                <div class="control">
+                    <input id="heightInput" class="input" type="email"
+                        placeholder="e.g. 63(in inches)">
+                </div>
+            </div>
+
+            <!-- Weight -->
+            <div class="field">
+                <label class="label">Weight</label>
+                <div class="control">
+                    <input id="weightInput" class="input" type="email"
+                        placeholder="e.g. 160 lbs">
+                </div>
+            </div>
+
+            <button id="infoButtonSubmit"
+                class="button is-block is-primary is-fullwidth is-medium">Submit</button>
+            <br>
+            <small><em>Click Submit To Save Your Information</em></small>
+        </section>
+
+    
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+</form>
+</div>
+
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
     <script src="js/app_script.js"></script>
