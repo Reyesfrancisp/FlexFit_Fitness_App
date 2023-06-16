@@ -11,15 +11,57 @@
 
 <body>
     <header>
-        <h1 class="is-size-1">FlexFit</h1>
-        <h2>Exercises</h2>
-        <!-- This is the logo of the website -->
-        <img src="https://plchldr.co/i/30x30" alt="icon">
-        <nav>
-            <a href="app.html">Home</a>
+        <nav class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="https://bulma.io">
+                    <H1>FlexFit</H1>
+                </a>
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item">
+                        Home
+                    </a>
+
+                    <a class="navbar-item">
+                        Exercises
+                    </a>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            More
+                        </a>
+
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item">
+                                About Us
+                            </a>
+                            <a class="navbar-item">
+                                Customer Reviews
+                            </a>
+                            <a class="navbar-item">
+                                Contact
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </nav>
+
+        
     </header>
 
+    <p><h2 class="title is-1">Exercises</h2></p>
     <main>
         <div class="control"  >
             <div class="select">
@@ -70,10 +112,19 @@
                 </select>
             </div>
         </div>
+
         <button id="confirmButton" class="is-responsive button is-info is-focused" type="button">Confirm Info</button>
 
     </main>
 
+    <article class="message is-info">
+        <div class="message-header">
+          <p>Exercises</p>
+        </div>
+        <div class="message-body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+        </div>
+      </article>
 
     <footer>
         <nav>
@@ -86,6 +137,7 @@
         </nav>
 
     </footer>
+    
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="js/exercise_script.js"></script>

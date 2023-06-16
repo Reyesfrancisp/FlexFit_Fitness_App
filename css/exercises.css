@@ -5,18 +5,13 @@
     font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
 }
 
-
 .text-center {
   text-align: center;
 }
 
-
 html, body {
   height: 100%;
-
-
 }
-
 
 body {
   background-image: url("../images/youtube-at-home-workout-videos-the-10-most-popular-right-now-1606389546.png");
@@ -83,10 +78,8 @@ aside {
   margin-right: 10px;
 }
 
- button {
-  
+ button {  
   margin: 10px;
-  
 }
 
  .modal {
@@ -131,16 +124,3 @@ aside {
   margin-right: 10px;
 }
 
- @media (max-width: 600px) {
-  body {
-    flex-direction: column;
-  }
-   
-   aside {
-    width: 100%;
-  }
-   
-   article {
-    width: 100%;
-  }
-}
