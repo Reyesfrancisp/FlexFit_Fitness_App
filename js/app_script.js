@@ -2,6 +2,18 @@
 //global scoped variables
 var userData;
 
+// fuction for the hamburger for the drop down
+$(document).ready(function() {
+
+  // Check for click events on the navbar burger icon
+  $(".navbar-burger").click(function() {
+
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      $(".navbar-burger").toggleClass("is-active");
+      $(".navbar-menu").toggleClass("is-active");
+
+  });
+});
 //This is for the modal in app.html
 
 var button = document.getElementById('button');
