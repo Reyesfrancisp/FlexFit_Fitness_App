@@ -52,8 +52,14 @@ aside {
   padding: 20px;
 }
  footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform:translateX(-50%);
+  color: black;
   text-align: center;
   padding: 20px;
+
 }
  header {
   display: flex;
@@ -77,8 +83,14 @@ aside {
   margin-right: 10px;
 }
  button {
-  margin-top: 10px;
+  
+  margin: 10px;
+  
 }
+
+  
+
+
  .modal {
   display: none;
   position: fixed;
