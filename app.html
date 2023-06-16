@@ -14,6 +14,7 @@
 </head>
 
 <body>
+  
   <!-- Main App Navigation Page -->
   <header>
     <nav class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation">
@@ -54,174 +55,169 @@
               <a class="navbar-item">
                 Contact
               </a>
+              </header>
+
+  
+
+    <main class="container">
+        <div class="columns is-multiline">
+            <div class="column is-8 is-offset-2 register">
+                <div class="columns">
+                    <div class="column left">
+                        <h1 class="title is-1">Why FlexFit? </h1>
+                        <p>FlexFit offers personalized workout plans tailored to individual needs and goals.
+                            Users can input their workout type, level, and other relevant information,
+                            allowing the app to generate customized exercise routines that suit their
+                            specific requirements.</p>
+                    </div>
+
+                    <div class="column right has-text-centered">
+                        <h1 class="title is-4">Update Info</h1>
+                        <button class="button is-link is large" id="button">Update</button>
+
+                        <div class="modal" id="display-modal">
+                            <div class="modal-background"></div>
+                            <div class="modal-content">
+
+                                <section class="section-style">
+                                    <p class="description">Please Fill In Your information!</p>
+
+
+                                    <!-- Name -->
+                                    <div class="field">
+                                        <label class="label">Name</label>
+                                        <div class="control">
+                                            <input id = "nameInput" class="input" type="text" placeholder="e.g Alex Smith">
+                                        </div>
+                                    </div>
+
+                                    <!-- Age -->
+                                    <div class="field">
+                                        <label class="label">Age</label>
+                                        <div class="control">
+                                            <input id = "ageInput" class="input" type="email" placeholder="e.g. 18">
+                                        </div>
+                                    </div>
+
+                                    <!-- Email -->
+                                    <div class="field">
+                                        <label class="label">Email</label>
+                                        <div class="control">
+                                            <input id = "emailInput" class="input" type="email" placeholder="e.g. someone12@gmail.com">
+                                        </div>
+                                    </div>
+
+                                    <!-- Height -->
+                                    <div class="field">
+                                        <label class="label">Height</label>
+                                        <div class="control">
+                                            <input id = "heightInput" class="input" type="email" placeholder="e.g. 63(in inches)">
+                                        </div>
+                                    </div>
+
+                                    <!-- Weight -->
+                                    <div class="field">
+                                        <label class="label">Weight</label>
+                                        <div class="control">
+                                            <input id="weightInput" class="input" type="email" placeholder="e.g. 160 lbs">
+                                        </div>
+                                    </div>
+
+                                    <button id="infoButtonSubmit" class="button is-block is-primary is-fullwidth is-medium">Submit</button>
+                                    <br />
+                                    <small><em>Click Submit To Save Your Information</em></small>
+                                </section>
+
+                            </div>
+                            <button class="modal-close is-large" aria-label="close"></button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-8 is-offset-2">
+                <br>
+              
             </div>
           </div>
         </div>
+            
+    </main>
 
-       
-      </div>
-    </nav>
-  </header>
+    <h2 class="title is-2 review">User's Reviews</h2>
+    <section class="hero ">
+        <div class="hero-body">
+            <div class="container">
 
-
-  <main class="container">
-    <div class="columns is-multiline">
-      <div class="column is-8 is-offset-2 register">
-        <div class="columns">
-          <div class="column left">
-            <h1 class="title is-1">Why FlexFit? </h1>
-            <p>FlexFit offers personalized workout plans tailored to individual needs and goals.
-              Users can input their workout type, level, and other relevant information,
-              allowing the app to generate customized exercise routines that suit their
-              specific requirements.</p>
-          </div>
-
-          <div class="column right has-text-centered">
-            <h1 class="title is-4">Update Info</h1>
-            <button class="button is-link is large" id="button">Update</button>
-
-            <div class="modal" id="display-modal">
-              <div class="modal-background"></div>
-              <div class="modal-content">
-
-                <section class="section-style">
-                  <p class="description">Please Fill In Your information!</p>
-
-
-                  <!-- Name -->
-                  <div class="field">
-                    <label class="label">Name</label>
-                    <div class="control">
-                      <input id="nameInput" class="input" type="text" placeholder="e.g Alex Smith">
+                <section class="section">
+                    <div class="columns is-variable is-8">
+                        <div class="column is-5 is-offset-1 ">
+                            <div class="content is-medium">
+                                <h2 class="subtitle is-5 has-text-grey">Jun 06, 2023</h2>
+                                <h1 class="title has-text-black is-4">First Review</h1>
+                                <p class="has-text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Inventore repudiandae, delectus possimus odit deleniti eveniet, distinctio
+                                    reprehenderit provident dicta repellat amet dolore quaerat consectetur soluta
+                                    obcaecati cumque, eos animi porro?</p>
+                            </div>
+                        </div>
+                        <div class="column is-5">
+                            <div class="content is-medium">
+                                <h2 class="subtitle is-5 has-text-grey">Jun 06, 2023</h2>
+                                <h1 class="title has-text-black is-4">Second Review</h1>
+                                <p class="has-text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                                    veritatis, vitae doloremque cupiditate totam fugit ad iste nesciunt in sed vero quas
+                                    at culpa. Cum corporis quibusdam explicabo aperiam officiis.</p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-
-                  <!-- Age -->
-                  <div class="field">
-                    <label class="label">Age</label>
-                    <div class="control">
-                      <input id="ageInput" class="input" type="email" placeholder="e.g. 18">
-                    </div>
-                  </div>
-
-                  <!-- Email -->
-                  <div class="field">
-                    <label class="label">Email</label>
-                    <div class="control">
-                      <input id="emailInput" class="input" type="email" placeholder="e.g. someone12@gmail.com">
-                    </div>
-                  </div>
-
-                  <!-- Height -->
-                  <div class="field">
-                    <label class="label">Height</label>
-                    <div class="control">
-                      <input id="heightInput" class="input" type="email" placeholder="e.g. 63(in inches)">
-                    </div>
-                  </div>
-
-                  <!-- Weight -->
-                  <div class="field">
-                    <label class="label">Weight</label>
-                    <div class="control">
-                      <input id="weightInput" class="input" type="email" placeholder="e.g. 160 lbs">
-                    </div>
-                  </div>
-
-                  <button id="infoButtonSubmit"
-                    class="button is-block is-primary is-fullwidth is-medium">Submit</button>
-                  <br />
-                  <small><em>Click Submit To Save Your Information</em></small>
                 </section>
 
-              </div>
-              <button class="modal-close is-large" aria-label="close"></button>
+                <div class="is-divider"></div>
+
+                <section class="section">
+                    <div class="columns is-variable is-8">
+                        <div class="column is-5 is-offset-1">
+                            <div class="content is-medium">
+                                <h2 class="subtitle is-5 has-text-grey">Jun 06, 2023</h2>
+                                <h1 class="title has-text-black is-4">Third Review</h1>
+                                <p class="has-text-dark">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Officiis obcaecati dolores sint laborum magnam doloribus nihil, corporis eligendi,
+                                    aut quo est ad explicabo rem, veniam beatae nam. Doloremque, suscipit nemo!</p>
+                            </div>
+                        </div>
+                        <div class="column is-5">
+                            <div class="content is-medium">
+                                <h2 class="subtitle is-5 has-text-grey">Jun 06, 2023</h2>
+                                <h1 class="title has-text-black is-4">Forth Review</h1>
+                                <p class="has-text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                                    fuga dolorum a iure eos obcaecati magnam sapiente, similique, facilis dolores
+                                    deleniti, esse vero suscipit aperiam omnis nisi tempora quibusdam eum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
             </div>
-            </form>
-          </div>
         </div>
-      </div>
-      <div class="column is-8 is-offset-2">
-        <br>
-      </div>
-    </div>
-  </main>
-
-  <h2 class="title is-2 review">User's Reviews</h2>
-  <section class="hero ">
-    <div class="hero-body">
-      <div class="container">
-
-        <section class="section">
-          <div class="columns is-variable is-8">
-            <div class="column is-5 is-offset-1 ">
-              <div class="content is-medium">
-                <h2 class="subtitle is-5 has-text-grey">Jun 06, 2023</h2>
-                <h1 class="title has-text-black is-4">First Review</h1>
-                <p class="has-text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Inventore repudiandae, delectus possimus odit deleniti eveniet, distinctio
-                  reprehenderit provident dicta repellat amet dolore quaerat consectetur soluta
-                  obcaecati cumque, eos animi porro?</p>
-              </div>
-            </div>
-            <div class="column is-5">
-              <div class="content is-medium">
-                <h2 class="subtitle is-5 has-text-grey">Jun 06, 2023</h2>
-                <h1 class="title has-text-black is-4">Second Review</h1>
-                <p class="has-text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                  veritatis, vitae doloremque cupiditate totam fugit ad iste nesciunt in sed vero quas
-                  at culpa. Cum corporis quibusdam explicabo aperiam officiis.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <div class="is-divider"></div>
-
-        <section class="section">
-          <div class="columns is-variable is-8">
-            <div class="column is-5 is-offset-1">
-              <div class="content is-medium">
-                <h2 class="subtitle is-5 has-text-grey">Jun 06, 2023</h2>
-                <h1 class="title has-text-black is-4">Third Review</h1>
-                <p class="has-text-dark">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Officiis obcaecati dolores sint laborum magnam doloribus nihil, corporis eligendi,
-                  aut quo est ad explicabo rem, veniam beatae nam. Doloremque, suscipit nemo!</p>
-              </div>
-            </div>
-            <div class="column is-5">
-              <div class="content is-medium">
-                <h2 class="subtitle is-5 has-text-grey">Jun 06, 2023</h2>
-                <h1 class="title has-text-black is-4">Forth Review</h1>
-                <p class="has-text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-                  fuga dolorum a iure eos obcaecati magnam sapiente, similique, facilis dolores
-                  deleniti, esse vero suscipit aperiam omnis nisi tempora quibusdam eum.</p>
-              </div>
-            </div>
-          </div>
-        </section>
+    </section>
 
 
-      </div>
-    </div>
-  </section>
+    <footer>
+        <nav>
+            <a href="mailto:random@gmail.com">Email</a>
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://github.com/someone" target="_blank">Github</a>
+            <a href="https://twitter.com/" target="_blank">Twitter</a>
+            <a href="https://www.youtube.com/" target="_blank">Youttube</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </nav>
 
-
-  <footer>
-    <nav>
-      <a href="mailto:random@gmail.com">Email</a>
-      <a href="https://www.facebook.com" target="_blank">Facebook</a>
-      <a href="https://github.com/someone" target="_blank">Github</a>
-      <a href="https://twitter.com/" target="_blank">Twitter</a>
-      <a href="https://www.youtube.com/" target="_blank">Youttube</a>
-      <a href="https://www.instagram.com" target="_blank">Instagram</a>
-    </nav>
-
-  </footer>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
-  <script src="js/app_script.js"></script>
-
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="js/app_script.js"></script>
 </body>
 
 </html>
