@@ -2,6 +2,18 @@
 //global scoped variables
 var userData;
 
+// fuction for the hamburger for the drop down
+$(document).ready(function() {
+
+  // Check for click events on the navbar burger icon
+  $(".navbar-burger").click(function() {
+
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      $(".navbar-burger").toggleClass("is-active");
+      $(".navbar-menu").toggleClass("is-active");
+
+  });
+});
 //This is for the modal in app.html
 
 var button = document.getElementById('button');
@@ -10,7 +22,28 @@ var close = document.getElementsByClassName('modal-close')[0];
 
 //When you click the button , the modal pops out
 button.onclick = function() {
-    displayModal.style.display = 'block';   
+    displayModal.style.display = 'block'; 
+    if(localStorage.getItem('Name') != null)
+    {
+      $("#nameInput").val(localStorage.getItem('Name'));
+    }
+    if(localStorage.getItem('Age') != null)
+    {
+      $("#ageInput").val(localStorage.getItem('Age'));
+    }
+    if(localStorage.getItem('Height') != null)
+    {
+      $("#heightInput").val(localStorage.getItem('Height'));
+    }
+    if(localStorage.getItem('Weight') != null)
+    {
+      $("#weightInput").val(localStorage.getItem('Weight'));
+    }
+    if(localStorage.getItem('E-mail') != null)
+    {
+      $("#emailInput").val(localStorage.getItem('E-mail'));
+    }
+
 }
 
 //When you click the x the modal close

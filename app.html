@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FlexFit App</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/app.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexFit App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
 </head>
 
@@ -64,9 +64,11 @@
     </nav>
 </header>
 
-  
-
     <main class="container">
+        <video autoplay loop muted class="background-video">
+            <source src="./images/People Working Out.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         <div class="columns is-multiline">
             <div class="column is-8 is-offset-2 register">
                 <div class="columns">
@@ -94,7 +96,8 @@
                                     <div class="field">
                                         <label class="label">Name</label>
                                         <div class="control">
-                                            <input id = "nameInput" class="input" type="text" placeholder="e.g Alex Smith">
+                                            <input id="nameInput" class="input" type="text"
+                                                placeholder="e.g Alex Smith">
                                         </div>
                                     </div>
 
@@ -102,7 +105,7 @@
                                     <div class="field">
                                         <label class="label">Age</label>
                                         <div class="control">
-                                            <input id = "ageInput" class="input" type="email" placeholder="e.g. 18">
+                                            <input id="ageInput" class="input" type="email" placeholder="e.g. 18">
                                         </div>
                                     </div>
 
@@ -110,7 +113,8 @@
                                     <div class="field">
                                         <label class="label">Email</label>
                                         <div class="control">
-                                            <input id = "emailInput" class="input" type="email" placeholder="e.g. someone12@gmail.com">
+                                            <input id="emailInput" class="input" type="email"
+                                                placeholder="e.g. someone12@gmail.com">
                                         </div>
                                     </div>
 
@@ -118,7 +122,8 @@
                                     <div class="field">
                                         <label class="label">Height</label>
                                         <div class="control">
-                                            <input id = "heightInput" class="input" type="email" placeholder="e.g. 63(in inches)">
+                                            <input id="heightInput" class="input" type="email"
+                                                placeholder="e.g. 63(in inches)">
                                         </div>
                                     </div>
 
@@ -126,11 +131,13 @@
                                     <div class="field">
                                         <label class="label">Weight</label>
                                         <div class="control">
-                                            <input id="weightInput" class="input" type="email" placeholder="e.g. 160 lbs">
+                                            <input id="weightInput" class="input" type="email"
+                                                placeholder="e.g. 160 lbs">
                                         </div>
                                     </div>
 
-                                    <button id="infoButtonSubmit" class="button is-block is-primary is-fullwidth is-medium">Submit</button>
+                                    <button id="infoButtonSubmit"
+                                        class="button is-block is-primary is-fullwidth is-medium">Submit</button>
                                     <br />
                                     <small><em>Click Submit To Save Your Information</em></small>
                                 </section>
@@ -144,11 +151,11 @@
             </div>
             <div class="column is-8 is-offset-2">
                 <br>
-              
+
             </div>
-          </div>
         </div>
-            
+        </div>
+
     </main>
 
     <h2 class="title is-2 review">User's Reviews</h2>
