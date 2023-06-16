@@ -45,7 +45,7 @@ function getUserInfoModal() {
     userInfo.email = "E-mail: " + $("#emailInput").val();
   
     const dateInfo = dayjs();
-    userInfo.date = "Date joined: " + dateInfo.format('YYYY-MM-DD');
+    userInfo.date = "Date updated: " + dateInfo.format('YYYY-MM-DD');
   
     return userInfo; //return the object
   }
