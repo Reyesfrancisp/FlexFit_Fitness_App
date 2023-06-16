@@ -22,7 +22,28 @@ var close = document.getElementsByClassName('modal-close')[0];
 
 //When you click the button , the modal pops out
 button.onclick = function() {
-    displayModal.style.display = 'block';   
+    displayModal.style.display = 'block'; 
+    if(localStorage.getItem('Name') != null)
+    {
+      $("#nameInput").val(localStorage.getItem('Name'));
+    }
+    if(localStorage.getItem('Age') != null)
+    {
+      $("#ageInput").val(localStorage.getItem('Age'));
+    }
+    if(localStorage.getItem('Height') != null)
+    {
+      $("#heightInput").val(localStorage.getItem('Height'));
+    }
+    if(localStorage.getItem('Weight') != null)
+    {
+      $("#weightInput").val(localStorage.getItem('Weight'));
+    }
+    if(localStorage.getItem('E-mail') != null)
+    {
+      $("#emailInput").val(localStorage.getItem('E-mail'));
+    }
+
 }
 
 //When you click the x the modal close
