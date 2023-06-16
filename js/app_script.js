@@ -2,29 +2,6 @@
 //global scoped variables
 var userData;
 
-//This is for the modal in app.html
-
-var button = document.getElementById('button');
-var displayModal = document.getElementById('display-modal');
-var close = document.getElementsByClassName('modal-close')[0];
-
-//When you click the button , the modal pops out
-button.onclick = function () {
-  displayModal.style.display = 'block';
-}
-
-//When you click the x the modal close
-close.onclick = function () {
-  displayModal.style.display = 'none';
-}
-
-//When you click the background the modal close
-window.onclick = function (event) {
-  if (event.target.className === 'modal-background') {
-    displayModal.style.display = 'none';
-  }
-}
-
 //function to get user info from the modal
 function getUserInfoModal() {
     var userInfo = {
