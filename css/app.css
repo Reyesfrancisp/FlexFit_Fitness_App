@@ -2,18 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
 }
-    /* color: black; */
+ 
+  header {
+    padding: 20px;
+    margin-bottom: 5%;
+  }
 
-.text-center {
+  .review {
     text-align: center;
-}
-
-
-/* This is for the modal style  */
-
-.section-style {
+    margin-top: 5%;
+  }
+  
+  .section-style {
     background: white;
     position: fixed;
     width: 650px;
@@ -21,9 +23,14 @@
     padding: 20px;
 }
 
-html, body {
-    height: 100%;
-   
-   
+.background-video{
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 
+main{
+  height: 400px;
 }

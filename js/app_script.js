@@ -2,6 +2,18 @@
 //global scoped variables
 var userData;
 
+// fuction for the hamburger for the drop down
+$(document).ready(function() {
+
+  // Check for click events on the navbar burger icon
+  $(".navbar-burger").click(function() {
+
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      $(".navbar-burger").toggleClass("is-active");
+      $(".navbar-menu").toggleClass("is-active");
+
+  });
+});
 //This is for the modal in app.html
 
 var button = document.getElementById('button');
@@ -9,21 +21,44 @@ var displayModal = document.getElementById('display-modal');
 var close = document.getElementsByClassName('modal-close')[0];
 
 //When you click the button , the modal pops out
-button.onclick = function () {
-  displayModal.style.display = 'block';
+button.onclick = function() {
+    displayModal.style.display = 'block'; 
+    if(localStorage.getItem('Name') != null)
+    {
+      $("#nameInput").val(localStorage.getItem('Name'));
+    }
+    if(localStorage.getItem('Age') != null)
+    {
+      $("#ageInput").val(localStorage.getItem('Age'));
+    }
+    if(localStorage.getItem('Height') != null)
+    {
+      $("#heightInput").val(localStorage.getItem('Height'));
+    }
+    if(localStorage.getItem('Weight') != null)
+    {
+      $("#weightInput").val(localStorage.getItem('Weight'));
+    }
+    if(localStorage.getItem('E-mail') != null)
+    {
+      $("#emailInput").val(localStorage.getItem('E-mail'));
+    }
+
 }
 
 //When you click the x the modal close
-close.onclick = function () {
-  displayModal.style.display = 'none';
+close.onclick = function() {
+    displayModal.style.display = 'none';   
 }
 
 //When you click the background the modal close
-window.onclick = function (event) {
-  if (event.target.className === 'modal-background') {
-    displayModal.style.display = 'none';
-  }
+window.onclick = function(event) {
+    if (event.target.className === 'modal-background') {
+        displayModal.style.display = 'none';
+    }
 }
+
+
 
 //function to get user info from the modal
 function getUserInfoModal() {
@@ -43,9 +78,18 @@ function getUserInfoModal() {
     userInfo.email = "E-mail: " + $("#emailInput").val();
   
     const dateInfo = dayjs();
-    userInfo.date = "Date joined: " + dateInfo.format('YYYY-MM-DD');
+    userInfo.date = "Date updated: " + dateInfo.format('YYYY-MM-DD');
   
     return userInfo; //return the object
+  }
+
+
+  function addToLocal() {
+    localStorage.setItem("Name", $("#nameInput").val());
+    localStorage.setItem("Age", $("#ageInput").val());
+    localStorage.setItem("Height", $("#heightInput").val());
+    localStorage.setItem("Weight", $("#weightInput").val());
+    localStorage.setItem("E-mail", $("#emailInput").val());
   }
 
   function pageInitialize() {
@@ -53,6 +97,7 @@ function getUserInfoModal() {
     $("#infoButtonSubmit").click(function () {
       userData = getUserInfoModal();
       console.log(userData);
+      addToLocal();
     });
   }
 
