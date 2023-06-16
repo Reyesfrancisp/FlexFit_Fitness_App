@@ -16,53 +16,51 @@
 <body>
   <!-- Main App Navigation Page -->
   <header>
-    <nav class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
-          <H1>FlexFit</H1>
-        </a>
-
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-end">
-          <a class="navbar-item">
-            Home
+    <!-- This is the logo of the website -->
+ 
+      <nav class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://bulma.io">
+            <H1>FlexFit</H1>
           </a>
-
-          <a class="navbar-item">
-            Exercises
+  
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
           </a>
-
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">
-              More
+        </div>
+  
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item">
+              Home
             </a>
-
-            <div class="navbar-dropdown">
-              <a class="navbar-item">
-                About Us
+  
+            <a class="navbar-item">
+              Exercises
+            </a>
+  
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                More
               </a>
-              <a class="navbar-item">
-                Customer Reviews
-              </a>
-              <a class="navbar-item">
-                Contact
-              </a>
+  
+              <div class="navbar-dropdown">
+                <a class="navbar-item">
+                  About Us
+                </a>
+                <a class="navbar-item">
+                  Customer Reviews
+                </a>
+                <a class="navbar-item">
+                  Contact
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-
-       
-      </div>
-    </nav>
-  </header>
-
+    </header>
+ 
 
   <main class="container">
     <div class="columns is-multiline">
@@ -77,66 +75,45 @@
           </div>
 
           <div class="column right has-text-centered">
-            <h1 class="title is-4">Update Info</h1>
-            <button class="button is-link is large" id="button">Update</button>
-
-            <div class="modal" id="display-modal">
-              <div class="modal-background"></div>
-              <div class="modal-content">
-
-                <section class="section-style">
-                  <p class="description">Please Fill In Your information!</p>
-
-
-                  <!-- Name -->
-                  <div class="field">
-                    <label class="label">Name</label>
-                    <div class="control">
-                      <input id="nameInput" class="input" type="text" placeholder="e.g Alex Smith">
-                    </div>
-                  </div>
-
-                  <!-- Age -->
-                  <div class="field">
-                    <label class="label">Age</label>
-                    <div class="control">
-                      <input id="ageInput" class="input" type="email" placeholder="e.g. 18">
-                    </div>
-                  </div>
-
-                  <!-- Email -->
-                  <div class="field">
-                    <label class="label">Email</label>
-                    <div class="control">
-                      <input id="emailInput" class="input" type="email" placeholder="e.g. someone12@gmail.com">
-                    </div>
-                  </div>
-
-                  <!-- Height -->
-                  <div class="field">
-                    <label class="label">Height</label>
-                    <div class="control">
-                      <input id="heightInput" class="input" type="email" placeholder="e.g. 63(in inches)">
-                    </div>
-                  </div>
-
-                  <!-- Weight -->
-                  <div class="field">
-                    <label class="label">Weight</label>
-                    <div class="control">
-                      <input id="weightInput" class="input" type="email" placeholder="e.g. 160 lbs">
-                    </div>
-                  </div>
-
-                  <button id="infoButtonSubmit"
-                    class="button is-block is-primary is-fullwidth is-medium">Submit</button>
-                  <br />
-                  <small><em>Click Submit To Save Your Information</em></small>
-                </section>
-
+            <h1 class="title is-4">Sign In / Sign Up</h1>
+            <p class="description">Please Fill In Your information!</p>
+            <form>
+              <div class="field">
+                <div class="control">
+                  <input id="nameInput" class="input" type="text" placeholder="Name">
+                </div>
               </div>
-              <button class="modal-close is-large" aria-label="close"></button>
-            </div>
+
+              <!-- Age -->
+              <div class="field">
+                <div class="control">
+                  <input id="ageInput" class="input" type="email" placeholder="Age">
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="field">
+                <div class="control">
+                  <input id="emailInput" class="input" type="email" placeholder="Email">
+                </div>
+              </div>
+
+              <!-- Height -->
+              <div class="field">
+                <div class="control">
+                  <input id="heightInput" class="input" type="email" placeholder="Height">
+                </div>
+              </div>
+
+              <!-- Weight -->
+              <div class="field">
+                <div class="control">
+                  <input class="input" placeholder="Weight">
+                </div>
+              </div>
+              <button class="button is-block is-primary is-fullwidth is-medium">Submit</button>
+              <br />
+              <small><em>Click Summit To Save Your Information.</em></small>
             </form>
           </div>
         </div>
@@ -158,19 +135,18 @@
               <div class="content is-medium">
                 <h2 class="subtitle is-5 has-text-grey">Jun 06, 2023</h2>
                 <h1 class="title has-text-black is-4">First Review</h1>
-                <p class="has-text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Inventore repudiandae, delectus possimus odit deleniti eveniet, distinctio
-                  reprehenderit provident dicta repellat amet dolore quaerat consectetur soluta
-                  obcaecati cumque, eos animi porro?</p>
+                <p class="has-text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore repudiandae,
+                  delectus possimus odit deleniti eveniet, distinctio reprehenderit provident dicta repellat amet dolore
+                  quaerat consectetur soluta obcaecati cumque, eos animi porro?</p>
               </div>
             </div>
             <div class="column is-5">
               <div class="content is-medium">
                 <h2 class="subtitle is-5 has-text-grey">Jun 06, 2023</h2>
                 <h1 class="title has-text-black is-4">Second Review</h1>
-                <p class="has-text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                  veritatis, vitae doloremque cupiditate totam fugit ad iste nesciunt in sed vero quas
-                  at culpa. Cum corporis quibusdam explicabo aperiam officiis.</p>
+                <p class="has-text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis veritatis, vitae
+                  doloremque cupiditate totam fugit ad iste nesciunt in sed vero quas at culpa. Cum corporis quibusdam
+                  explicabo aperiam officiis.</p>
               </div>
             </div>
           </div>
@@ -184,18 +160,18 @@
               <div class="content is-medium">
                 <h2 class="subtitle is-5 has-text-grey">Jun 06, 2023</h2>
                 <h1 class="title has-text-black is-4">Third Review</h1>
-                <p class="has-text-dark">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Officiis obcaecati dolores sint laborum magnam doloribus nihil, corporis eligendi,
-                  aut quo est ad explicabo rem, veniam beatae nam. Doloremque, suscipit nemo!</p>
+                <p class="has-text-dark">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis obcaecati
+                  dolores sint laborum magnam doloribus nihil, corporis eligendi, aut quo est ad explicabo rem, veniam
+                  beatae nam. Doloremque, suscipit nemo!</p>
               </div>
             </div>
             <div class="column is-5">
               <div class="content is-medium">
                 <h2 class="subtitle is-5 has-text-grey">Jun 06, 2023</h2>
                 <h1 class="title has-text-black is-4">Forth Review</h1>
-                <p class="has-text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-                  fuga dolorum a iure eos obcaecati magnam sapiente, similique, facilis dolores
-                  deleniti, esse vero suscipit aperiam omnis nisi tempora quibusdam eum.</p>
+                <p class="has-text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fuga dolorum a
+                  iure eos obcaecati magnam sapiente, similique, facilis dolores deleniti, esse vero suscipit aperiam
+                  omnis nisi tempora quibusdam eum.</p>
               </div>
             </div>
           </div>
@@ -220,7 +196,7 @@
   </footer>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
-  <script src="js/app_script.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 
