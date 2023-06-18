@@ -5,9 +5,27 @@
     font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
 }
 
-.exercises{
+/* This adds space in between for the nav at the bottom and the dropdown menus */
+.exercises, .social {
   display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 8px 5%;
+}
+
+/* This targets the dropdown menus */
+.exercises{
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+/* This targets the nav at the bottom of the page */
+.social {
+  margin-top: 22%;
+}
+
+/* This targets the title "Exercises" */
+.ex {
+  margin-left: 43rem;
+ font-size: xxx-large;
 }

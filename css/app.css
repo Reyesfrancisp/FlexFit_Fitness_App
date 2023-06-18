@@ -15,6 +15,7 @@
     margin-top: 25%;
   }
   
+  /* This is the inside of the modal */
   .section-style {
     background: white;
     position: fixed;
@@ -25,17 +26,23 @@
 
 /* This is the modal "update" */
 .update {
-position: relative;
+position:relative;
 bottom: 75em;
 left: 70em;
+align-items: center;
+
 }
 
+/* Targets the title "Why FlexFit?" */
 .flex1 {
   margin-top: 90px;
 }
 
+/* Targets the paragraph at the top of the page */
 .flex {
   padding-right: 500px;
+  /* font-size: large; */
+  color: black;
   
 }
 
@@ -44,7 +51,16 @@ left: 70em;
   z-index: -1;
   height: 100%;
   width: 100%;
+  opacity: 0.6;
   object-fit: cover;
+}
+
+/* This is the nav at the bottom of the page */
+.social {
+    display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 5%;
 }
 
 main{
