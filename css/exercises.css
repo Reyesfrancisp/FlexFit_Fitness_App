@@ -23,6 +23,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+
   margin-top: 5%;
 }
 
@@ -37,12 +38,7 @@ main {
 } */
 
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
+
 
 #typeForm, #muscleForm, #difficultyForm, #confirmButton{
 
