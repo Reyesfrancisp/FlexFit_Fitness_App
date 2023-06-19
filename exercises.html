@@ -30,7 +30,7 @@
 
             <div id="navbarBasicExample" class="navbar-menu">
                 <div class="navbar-end">
-                    <a class="navbar-item" href="app.html" >
+                    <a class="navbar-item" href="app.html">
                         Home
                     </a>
 
@@ -43,8 +43,8 @@
                             <a class="navbar-item">
                                 About Us
                             </a>
-                    
-                            <a class="navbar-item" href="#social" >
+
+                            <a class="navbar-item" href="#social">
                                 Contact
                             </a>
 
@@ -55,13 +55,15 @@
 
         </nav>
 
-        
+
     </header>
 
 
     <!-- <p><h2 class="title is-1">Exercises</h2></p> -->
-    <main class="exercises" >
-        <div class="control"  >
+
+    <main class="exercises">
+        <div class="control">
+
             <div class="select">
                 <select id="typeForm">
                     <option value="random" selected>Workout Type</option>
@@ -110,23 +112,22 @@
                 </select>
             </div>
         </div>
-
-        <button id="confirmButton" class="is-responsive button is-info is-focused" type="button">Confirm Info</button>
-
+        <div class="control">
+            <button id="confirmButton" class="is-responsive button is-info is-focused" type="button">Confirm
+                Info</button>
+        </div>
     </main>
 
-    <article class="message is-info">
-        <div class="message-header">
-          <p class="ex">Exercises</p>
+    <article id="exerciseSection" class="container is-info">
+        <div class="message-header ex is-centered">Exercises
         </div>
+        <section id="messageBody" class="message-body">
+            <!-- output content goes here -->
+        </section>
+    </article>
 
-        <div id="messageBody" class="message-body">
-           
-        </div>
-      </article>
-
-      <footer class="footer">
-        <nav class="social navbar is-link" id="social" >
+    <footer class="footer">
+        <nav class="social navbar is-link" id="social">
             <a href="mailto:random@gmail.com">Email</a>
             <a href="https://www.facebook.com" target="_blank">Facebook</a>
             <a href="https://github.com/Reyesfrancisp/FlexFit_Fitness_App" target="_blank">Github</a>
@@ -146,7 +147,7 @@
             </section> -->
 
     </footer>
-    
+
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="js/exercise_script.js"></script>
