@@ -23,7 +23,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  margin-top: 5%;
 }
 
 /* footer {
@@ -64,23 +64,81 @@ footer nav a {
     padding: 8px 5%;
 }
 
+.navbar-item h1 {
+  font-size: 2rem;
+  font-family: 'Aoboshi One', serif;
+  font-weight: 400px;
+ }
+
+ .navbar-end{
+  padding-right: 5%;
+ } 
+
 /* This targets the dropdown menus */
 .exercises{
-  margin-bottom: 3%;
-  margin-top: 3%;
+  display: flex;
+  justify-content: space-around;
 }
 
 /* This targets the nav at the bottom of the page */
 .social {
-  margin-top: 22%;
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 5%;
+    }
+
+.social a{
+color: white;
+}
+
+.social a:hover{
+color: white;
+ transform: scale(1.2);
+text-decoration: underline;
 }
 
 /* This targets the title "Exercises" */
 .ex {
-  margin-left: 43rem;
+  margin-top: 5%;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
  font-size: xxx-large;
+}
+
+#exerciseSection
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+  /* make it flex row at small screens */
+}
+
+#messageBody
+{
+  background-color: silver;
 }
 
 .footer{
   background-color: transparent;
+  /* position: relative; */
+  margin-top: 26%;
+  padding-bottom: 0%;
 }
+
+/* responsive at small screen */
+@media (max-width: 800px) {
+ 
+ 
+  /* This is the modal "update" */ 
+  main {
+flex-direction: column;
+  }
+
+  .control
+  {
+    margin-top: 2%;
+  }
+
+} 

@@ -13,8 +13,11 @@
   .navbar-item h1 {
    font-size: 2rem;
    font-family: 'Aoboshi One', serif;
-
   }
+
+ .navbar-end{
+  padding-right: 5%;
+ } 
 
   .review {
     text-align: center;
@@ -84,6 +87,16 @@ align-items: center;
       align-items: center;
       justify-content: space-between;
       padding: 8px 5%;
+      }
+
+.social a{
+color: white;
+}
+
+.social a:hover{
+  color: white;
+   transform: scale(1.2);
+  text-decoration: underline;
 }
 
 main{
@@ -206,8 +219,6 @@ h1.why, p.flex{
 
 
 
-
-
 @media (max-width: 1200px) {
  
  
@@ -242,8 +253,6 @@ h1.why, p.flex{
  }
 
 }
-
-
 
 
 

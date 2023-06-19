@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlexFit Exercises</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="css/exercises.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation">
+        <nav class="navbar is-fixed-top is-link" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <a class="navbar-item" href="index.html">
                     <H1>FlexFit</H1>
@@ -27,7 +30,7 @@
 
             <div id="navbarBasicExample" class="navbar-menu">
                 <div class="navbar-end">
-                    <a class="navbar-item" href="app.html" >
+                    <a class="navbar-item" href="app.html">
                         Home
                     </a>
 
@@ -40,8 +43,8 @@
                             <a class="navbar-item">
                                 About Us
                             </a>
-                    
-                            <a class="navbar-item" href="#social" >
+
+                            <a class="navbar-item" href="#social">
                                 Contact
                             </a>
 
@@ -52,13 +55,13 @@
 
         </nav>
 
-        
+
     </header>
 
 
-    <p><h2 class="title is-1">Exercises</h2></p>
-    <main class="exercises" >
-        <div class="control"  >
+    <!-- <p><h2 class="title is-1">Exercises</h2></p> -->
+    <main class="exercises">
+        <div class="control">
             <div class="select">
                 <select id="typeForm">
                     <option value="random" selected>Workout Type</option>
@@ -107,21 +110,22 @@
                 </select>
             </div>
         </div>
-
-        <button id="confirmButton" class="is-responsive button is-info is-focused" type="button">Confirm Info</button>
-
+        <div class="control">
+            <button id="confirmButton" class="is-responsive button is-info is-focused" type="button">Confirm
+                Info</button>
+        </div>
     </main>
 
-    <article class="message is-info">
-        <div class="message-header">
-          <p class="ex">Exercises</p>
+    <article id="exerciseSection" class="container is-info">
+        <div class="message-header ex is-centered">Exercises
         </div>
         <section id="messageBody" class="message-body">
+            <!-- output content goes here -->
         </section>
-      </article>
+    </article>
 
-      <footer class="footer">
-        <nav class="social" id="social" >
+    <footer class="footer">
+        <nav class="social navbar is-link" id="social">
             <a href="mailto:random@gmail.com">Email</a>
             <a href="https://www.facebook.com" target="_blank">Facebook</a>
             <a href="https://github.com/Reyesfrancisp/FlexFit_Fitness_App" target="_blank">Github</a>
@@ -130,7 +134,7 @@
             <a href="https://www.instagram.com" target="_blank">Instagram</a>
         </nav>
 
-        <section class="content has-text-centered ">
+        <!-- <section class="content has-text-centered ">
             
               <p>
                 <strong>FlexFit</strong> by <a href="https://github.com/Reyesfrancisp/FlexFit_Fitness_App">FlexFit Team</a>. The source code is licensed
@@ -138,10 +142,10 @@
                 is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
               </p>
            
-            </section>
+            </section> -->
 
     </footer>
-    
+
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="js/exercise_script.js"></script>
