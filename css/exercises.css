@@ -1,10 +1,10 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: rgb(54, 45, 45);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
 }
+
 
 html, body {
   height: 100%;
@@ -28,7 +28,7 @@ main {
   padding: 60px;
 }
 
-footer {
+/* footer {
   position: fixed;
   bottom: 0;
   left: 50%;
@@ -36,7 +36,8 @@ footer {
   text-align: center;
   padding: 20px;
  
-}
+} */
+
 
 
 
@@ -51,3 +52,58 @@ footer nav a {
   margin-right: 20px;
 }
 
+
+/* This adds space in between for the nav at the bottom and the dropdown menus */
+.exercises, .social {
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 5%;
+}
+
+.navbar-item h1 {
+  font-size: 2rem;
+  font-family: 'Aoboshi One', serif;
+  font-weight: 400px;
+ }
+
+ .navbar-end{
+  padding-right: 5%;
+ } 
+
+/* This targets the dropdown menus */
+.exercises{
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+/* This targets the nav at the bottom of the page */
+.social {
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 5%;
+    }
+
+.social a{
+color: white;
+}
+
+.social a:hover{
+color: white;
+ transform: scale(1.2);
+text-decoration: underline;
+}
+
+/* This targets the title "Exercises" */
+.ex {
+  margin-left: 50rem;
+ font-size: xxx-large;
+}
+
+.footer{
+  background-color: transparent;
+  /* position: relative; */
+  margin-top: 26%;
+  padding-bottom: 0%;
+}

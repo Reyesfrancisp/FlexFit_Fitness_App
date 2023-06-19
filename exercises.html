@@ -5,18 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlexFit Exercises</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="css/exercises.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation">
+
+        <nav class="navbar is-fixed-top is-link" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <a class="navbar-item" href="index.html">
                     <H1>FlexFit</H1>
-                </a>
-    
+              </a>
                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
                     data-target="navbarBasicExample">
                     <span aria-hidden="true"></span>
@@ -24,19 +27,17 @@
                     <span aria-hidden="true"></span>
                 </a>
             </div>
-            
-    
+
             <div id="navbarBasicExample" class="navbar-menu">
                 <div class="navbar-end">
-                    <a class="navbar-item" href="index.html" >
+                    <a class="navbar-item" href="app.html" >
                         Home
                     </a>
-    
+                  
                     <div class="navbar-item has-dropdown is-hoverable">
                         <a class="navbar-link">
                             More
                         </a>
-    
                         <div class="navbar-dropdown">
                             <a class="navbar-item" href="#title is-2 review" >
                                 Customer Reviews
@@ -44,19 +45,18 @@
                             <a class="navbar-item" href="#social" >
                                 Contact
                             </a>
-    
-                        </div>
+                      </div>
                     </div>
                 </div>
             </div>
         </nav>
+      
     </header>
-   
     <main>
         <div class="control">
             <div class="select ">
                 <select  id="typeForm">
-                    <option value="random"  selected >Workout Type</option>
+                  <option value="random"  selected >Workout Type</option>
                     <option value="cardio">Cardio</option>
                     <option value="olympic_weightlifting">Olympic Weightlifting</option>
                     <option value="plyometrics">Plyometrics</option>
@@ -82,8 +82,8 @@
                     <option value="glutes">Glutes</option>
                     <option value="hamstrings">Hamstrings</option>
                     <option value="lats">Lats</option>
-                    <option value="lower_back">Lower_back</option>
-                    <option value="middle_back">Middle_back</option>
+                    <option value="lower_back">Lower Back</option>
+                    <option value="middle_back">Middle Back</option>
                     <option value="neck">Neck</option>
                     <option value="quadriceps">Quadriceps</option>
                     <option value="traps">Traps</option>
@@ -96,28 +96,49 @@
             <div class="select">
                 <select id="difficultyForm">
                     <option value="random" selected>Difficulty</option>
-                    <option value="easy">Easy</option>
-                    <option value="medium">Medium</option>
-                    <option value="hard">Hard</option>
+                    <option value="beginner">Easy</option>
+                    <option value="intermediate">Medium</option>
+                    <option value="expert">Hard</option>
                 </select>
             </div>
         </div>
+
         <button id="confirmButton" class="is-responsive button is-info is-focused" type="button">Confirm Info</button>
 
     </main>
 
+    <article class="message is-info">
+        <div class="message-header">
+          <p class="ex">Exercises</p>
+        </div>
 
-    <footer>
-        <nav>
+        <div id="messageBody" class="message-body">
+           
+        </div>
+      </article>
+
+      <footer class="footer">
+        <nav class="social navbar is-link" id="social" >
             <a href="mailto:random@gmail.com">Email</a>
             <a href="https://www.facebook.com" target="_blank">Facebook</a>
-            <a href="https://github.com/someone" target="_blank">Github</a>
+            <a href="https://github.com/Reyesfrancisp/FlexFit_Fitness_App" target="_blank">Github</a>
             <a href="https://twitter.com/" target="_blank">Twitter</a>
-            <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+            <a href="https://www.youtube.com/" target="_blank">Youtube</a>
             <a href="https://www.instagram.com" target="_blank">Instagram</a>
         </nav>
 
+        <!-- <section class="content has-text-centered ">
+            
+              <p>
+                <strong>FlexFit</strong> by <a href="https://github.com/Reyesfrancisp/FlexFit_Fitness_App">FlexFit Team</a>. The source code is licensed
+                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+                is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+              </p>
+           
+            </section> -->
+
     </footer>
+    
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="js/exercise_script.js"></script>

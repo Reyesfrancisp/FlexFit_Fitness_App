@@ -2,18 +2,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
 }
-    /* color: black; */
+ 
+  header {
+    padding: 20px;
+    margin-bottom: 10px;
+  }
 
-.text-center {
+  .navbar-item h1 {
+   font-size: 2rem;
+   font-family: 'Aoboshi One', serif;
+  }
+
+ .navbar-end{
+  padding-right: 5%;
+ } 
+
+  .review {
     text-align: center;
-}
-
-
-/* This is for the modal style  */
-
-.section-style {
+    margin-top: 5%;
+  }
+  
+  /* This is the inside of the modal */
+  .section-style {
     background: white;
     position: fixed;
     width: 650px;
@@ -21,9 +33,306 @@
     padding: 20px;
 }
 
-html, body {
-    height: 100%;
-   
-   
+/* This is the modal "update" */
+.update {
+position:absolute;
+top: 30%;
+left: 85%;
+align-items: center;
 
+}
+
+/* Targets the title "Why FlexFit?" */
+.flex1 {
+  margin-top: 60px;
+  text-align: left;
+  margin-left: 0;
+  
+  
+  
+}
+
+/* Targets the paragraph at the top of the page */
+.flex {
+  padding-right: 800px;
+  /* font-size: large; */
+  
+  
+  
+}
+/* target the class taht contains why flex and Paragraph */
+.register{
+  position: relative;
+  right: 15%;
+  font-size: 1rem;
+  color: black;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+ 
+
+}
+
+.background-video{
+  position: absolute;
+  z-index: -1;
+  height: 300px;
+  min-width: 100%;
+  opacity: 0.6;
+  object-fit:fill
+
+}
+
+/* This is the nav at the bottom of the page */
+.social {
+    display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 5%;
+      }
+
+.social a{
+color: white;
+}
+
+.social a:hover{
+  color: white;
+   transform: scale(1.2);
+  text-decoration: underline;
+}
+
+main{
+
+  position: relative;
+  height: 100%;
+  width: 100%;
+  
+}
+
+.review{
+  text-align: center;
+}
+
+@media (max-width: 2000px) {
+ 
+ 
+  /* This is the modal "update" */ 
+  .update {
+position: absolute;
+top: 275px;
+left: 90%;
+
+
+} */
+/* target the class taht contains why flex and Paragraph */
+.register{
+ top: 880px;
+
+ 
+   
+}
+h1.why, p.flex{
+  position: relative;
+  bottom: 30px;
+  font-size: .95rem;
+  padding-left: 15px;
+  padding-right: 800px;
+  
+}
+
+ /* the margin for the user reviews at the bottom */
+ .review {
+  
+   margin-top: 5%;
+ }
+
+}
+
+@media (max-width: 1700px) {
+ 
+ 
+  /* This is the modal "update" */ 
+  .update {
+position: absolute;
+top: 275px;
+left: 90%;
+
+
+} */
+/* target the class taht contains why flex and Paragraph */
+.register{
+ top: 880px;
+
+ 
+   
+}
+h1.why, p.flex{
+  position: relative;
+  bottom: 30px;
+  font-size: .65rem;
+  padding-left: 15px;
+  padding-right: 800px;
+  
+}
+
+ /* the margin for the user reviews at the bottom */
+ .review {
+  
+   margin-top: 5%;
+ }
+
+}
+
+
+@media (max-width: 1500px) {
+ 
+ 
+  /* This is the modal "update" */ 
+  .update {
+position: absolute;
+top: 275px;
+left: 85%;
+
+
+} */
+/* target the class taht contains why flex and Paragraph */
+.register{
+ top: 880px;
+
+ 
+   
+}
+h1.why, p.flex{
+  position: relative;
+  bottom: 30px;
+  font-size: .80rem;
+  padding-left: 15px;
+  padding-right: 500px;
+  
+}
+
+ /* the margin for the user reviews at the bottom */
+ .review {
+  
+   margin-top: 7%;
+ }
+
+}
+
+
+
+@media (max-width: 1200px) {
+ 
+ 
+  /* This is the modal "update" */ 
+  .update {
+position: absolute;
+top: 300px;
+left: 85%;
+
+
+} */
+/* target the class taht contains why flex and Paragraph */
+.register{
+ top: 880px;
+
+ 
+   
+}
+h1.why, p.flex{
+  position: relative;
+  bottom: 30px;
+  font-size: .75rem;
+  padding-left: 20px;
+  padding-right: 250px;
+  
+}
+
+ /* the margin for the user reviews at the bottom */
+ .review {
+  
+   margin-top: 15%;
+ }
+
+}
+
+
+
+@media (max-width: 700px) {
+ 
+ 
+  /* This is the modal "update" */ 
+  .update {
+position: absolute;
+top: 300px;
+left: 80%;
+
+
+} */
+/* target the class taht contains why flex and Paragraph */
+.register{
+ top: 880px;
+
+  right: 15%;
+  
+   
+}
+h1.why, p.flex{
+  position: relative;
+  bottom: 30px;
+  font-size: .70rem;
+  padding-left: 100px;
+  padding-right: 200px;
+  
+}
+
+ /* the margin for the user reviews at the bottom */
+ .review {
+  
+   margin-top: 20%;
+ }
+
+}
+
+
+
+
+@media (max-width: 400px) {
+ 
+ 
+  /* This is the modal "update" */ 
+  .update {
+position: absolute;
+top: 300px;
+left: 30%;
+
+
+} */
+/* target the class taht contains why flex and Paragraph */
+.register{
+ top: 880px;
+
+  right: 15%;
+  
+   
+}
+h1.why, p.flex{
+  position: relative;
+  bottom: 30px;
+  font-size: .60rem;
+  padding-left: 70px;
+  padding-right: 0px;
+  
+}
+
+ /* the margin for the user reviews at the bottom */
+ .review {
+  
+   margin-top: 30%;
+ }
+
+ footer .social{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: center;
+ }
 }
