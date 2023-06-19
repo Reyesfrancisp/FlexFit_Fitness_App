@@ -27,7 +27,7 @@ function getUserWorkoutInfo() {
 
 //function to get excercises from API
 
-function getExercises(callback) {
+function getExercises() {
     var muscle = workoutData.muscle;
     var type = workoutData.type;
     var difficulty = workoutData.difficulty;
@@ -52,13 +52,16 @@ function getExercises(callback) {
                 }
                 count++;
             }
+            console.log("finalExerciseList below");
+            console.log(finalExerciseList);    
+            displayData(finalExerciseList);
+
         },
         error: function ajaxError(jqXHR) {
             console.error("Error: ", jqXHR.responseText);
         },
     });
 
-    return finalExerciseList;
 }
 
 
@@ -66,24 +69,14 @@ function getExercises(callback) {
 function pageInitialize() {
 
     $("#confirmButton").click(function () {
+       console.log("Confirm Clicked");
         workoutData = getUserWorkoutInfo();
-        console.log(workoutData);
+        console.log(workoutData);        
+        getExercises();
+
     });
 }
 
-
-//run after the document is ready
-$(document).ready(pageInitialize());
-
-$("#confirmButton").click(function () {
-    console.log('test');
-    var exercisesListFinal = getExercises();
-    console.log(exercisesListFinal);
-
-
-    displayData(exercisesListFinal);
-
-});
 
 
 function displayData(data)
@@ -91,3 +84,7 @@ function displayData(data)
     console.log(data);
     dataOutput.textContent = data[0].name;
 }
+
+
+//run after the document is ready
+$(document).ready(pageInitialize);
