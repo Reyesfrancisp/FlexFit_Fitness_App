@@ -100,10 +100,12 @@ text-decoration: underline;
 
 /* This targets the title "Exercises" */
 .ex {
+
   margin-top: 5%;
   justify-content: center;
   text-align: center;
   padding: 2rem;
+
  font-size: xxx-large;
 }
 
