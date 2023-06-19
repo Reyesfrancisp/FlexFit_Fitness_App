@@ -5,124 +5,205 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlexFit App</title>
-    <link rel="stylesheet" href="./css/exercises.css">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/app.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
 </head>
 
 <body>
-    <!-- Main App Navigation Page -->
-    <header>
+  
+  <!-- Main App Navigation Page -->
+  <header>
+    <nav class="navbar is-fixed-top is-transparent" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="index.html">
+                <H1>FlexFit</H1>
+            </a>
 
-        <h1>FlexFit</h1>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
 
-        <!-- This is the logo of the website -->
-        <img src="https://plchldr.co/i/30x30" alt="icon">
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="exercises.html" >
+                    Exercises
+                </a>
 
-    </header>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        More
+                    </a>
 
-    <main>
-        <h2>Why FlexFit? </h2>
-        <p> FlexFit offers personalized workout plans tailored to individual needs and goals.
-            Users can input their workout type, level, and other relevant information,
-            allowing the app to generate customized exercise routines that suit their
-            specific requirements.</p>
-            <h2>About you</h2>
-            <button class="button is-link is large" id="button">Link</button>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="#title is-2 review" >
+                            Customer Reviews
+                        </a>
+                        <a class="navbar-item" href="#social" >
+                            Contact
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <main class="hero">
+
+        <!-- This is the video looping on the background -->
+        <video autoplay loop muted class="background-video">
+            <source src="./images/People Working Out.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+          <!-- Section Containing the main paragraph at the top of the page -->
+          <section class="column is-8 is-offset-2 register">
+
+                <h1 class="title is-1 flex1">Why FlexFit? </h1>
+                <p class="flex">FlexFit offers personalized workout plans tailored to individual needs and goals.
+                Users can input their workout type, level, and other relevant information,
+                allowing the app to generate customized exercise routines that suit their
+                specific requirements.
+                </p>
+
+          </section>
 
     </main>
 
-    <aside>
+    <!-- The Reviews section begins -->
 
-        <!-- <input type="text" placeholder="Name:">
-        <input type="text" placeholder="Last Name:">
+    <h2 class="title is-2 review">User's Reviews</h2> 
 
-        <input type="text" placeholder="Age:"> -->
+    <article class="hero" class="hero-body" class="container" id="title is-2 review" >
 
-            <div class="modal" id="display-modal">
-            <div class="modal-background"></div>
-            <div class="modal-content">
+        <section class="section">
+            <div class="columns is-variable is-8">
 
-                <section class="section-style">
+                <div class="column is-5 is-offset-1" class="content is-medium">
+                    <h2 class="subtitle is-5 has-text-grey">Jun 06, 2023</h2>
+                    <h1 class="title has-text-black is-4">First Review</h1>
+                    <p class="has-text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Inventore repudiandae, delectus possimus odit deleniti eveniet, distinctio
+                        reprehenderit provident dicta repellat amet dolore quaerat consectetur soluta
+                        obcaecati cumque, eos animi porro?</p>
+                </div>
 
-                    <!-- Name -->
-                    <div class="field">
-                        <label class="label">Name</label>
+
+                <div class="column is-5" class="content is-medium">
+                    <h2 class="subtitle is-5 has-text-grey">Jun 06, 2023</h2>
+                    <h1 class="title has-text-black is-4">Second Review</h1>
+                    <p class="has-text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                        veritatis, vitae doloremque cupiditate totam fugit ad iste nesciunt in sed vero quas
+                        at culpa. Cum corporis quibusdam explicabo aperiam officiis.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <spam class="is-divider"></spam>
+
+        <section class="section">
+            
+            <div class="columns is-variable is-8 ">
+
+                <div class="column is-5 is-offset-1" class="content is-medium">
+                    <h2 class="subtitle is-5 has-text-grey">Jun 06, 2023</h2>
+                    <h1 class="title has-text-black is-4">Third Review</h1>
+                    <p class="has-text-dark">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Officiis obcaecati dolores sint laborum magnam doloribus nihil, corporis eligendi,
+                        aut quo est ad explicabo rem, veniam beatae nam. Doloremque, suscipit nemo!</p>
+                </div>
+
+                <div class="column is-5" class="content is-medium">
+                    <h2 class="subtitle is-5 has-text-grey">Jun 06, 2023</h2>
+                    <h1 class="title has-text-black is-4">Forth Review</h1>
+                    <p class="has-text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                        fuga dolorum a iure eos obcaecati magnam sapiente, similique, facilis dolores
+                        deleniti, esse vero suscipit aperiam omnis nisi tempora quibusdam eum.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+    </article>
+
+    <!-- This section contains the modal that we use to obtain the user's data -->
+    <aside class="update" >
+        <!-- <h1 class="title is-4">Update Info</h1> -->
+        <button class="button is-link is large is-responsive" id="button">UPDATE INFO</button>
+
+        <div class="modal " id="display-modal">
+            <div class="modal-background">
+                <div class="modal-content">
+
+                    <section class="section-style">
+
+                        <!-- Name -->
+                        <p class="field">
+                            <label class="label">Name</label>
                         <div class="control">
                             <input id="nameInput" class="input" type="text" placeholder="e.g Alex Smith">
                         </div>
-                    </div>
+                        </p>
 
-                    <!-- Age -->
-                    <div class="field">
-                        <label class="label">Age</label>
+                        <!-- Age -->
+                        <p class="field">
+                            <label class="label">Age</label>
                         <div class="control">
                             <input id="ageInput" class="input" type="email" placeholder="e.g. 18">
                         </div>
-                    </div>
+                        </p>
 
-                    <!-- Email -->
-                    <div class="field">
-                        <label class="label">Email</label>
+                        <!-- Email -->
+                        <p class="field">
+                            <label class="label">Email</label>
                         <div class="control">
                             <input id="emailInput" class="input" type="email" placeholder="e.g. someone12@gmail.com">
                         </div>
-                    </div>
+                        </p>
 
-                    <!-- Height -->
-                    <div class="field">
-                        <label class="label">Height</label>
+                        <!-- Height -->
+                        <p class="field">
+                            <label class="label">Height</label>
                         <div class="control">
-                            <input id="heightInput" class="input" type="email"
-                                placeholder="e.g. Height in Inches (66 in)">
+                            <input id="heightInput" class="input" type="email" placeholder="e.g. 63(in inches)">
                         </div>
-                    </div>
+                        </p>
 
-                    <!-- Weight -->
-                    <div class="field">
-                        <label id="weightInput" class="label">Weight</label>
+                        <!-- Weight -->
+                        <p class="field">
+                            <label class="label">Weight</label>
                         <div class="control">
-                            <input class="input" placeholder="e.g. 160 lbs">
-                        </div>
-                    </div>
+                            <input id="weightInput" class="input" type="email" placeholder="e.g. 160 lbs">
+                            </dvi>
+                            </p>
 
-                    <input id="infoButtonSubmit" class="button" type="submit" value="Submit input">
-                </section>
+                            <button id="infoButtonSubmit"
+                                class="button is-block is-primary is-fullwidth is-medium">Submit
+                            </button>
 
+                    </section>
+                </div>
             </div>
             <button class="modal-close is-large" aria-label="close"></button>
         </div>
-
     </aside>
 
-    <article>
-        <h2>User's Reviews</h2>
 
-        <section><img src="https://plchldr.co/i/30x30" alt="First User">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, veritatis officiis repellat laborum saepe
-                distinctio modi reiciendis! Voluptatibus numquam tenetur sequi facere corrupti quae dolorum. Est optio
-                fugit provident nesciunt!</p>
-        </section>
-        <section><img src="https://plchldr.co/i/30x30" alt="Second User">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, veritatis officiis repellat laborum saepe
-                distinctio modi reiciendis! Voluptatibus numquam tenetur sequi facere corrupti quae dolorum. Est optio
-                fugit provident nesciunt!</p>
-        </section>
-        <section><img src="https://plchldr.co/i/30x30" alt="Third User">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, veritatis officiis repellat laborum saepe
-                distinctio modi reiciendis! Voluptatibus numquam tenetur sequi facere corrupti quae dolorum. Est optio
-                fugit provident nesciunt!</p>
-        </section>
-        <section><img src="https://plchldr.co/i/30x30" alt="Fourth User">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, veritatis officiis repellat laborum saepe
-                distinctio modi reiciendis! Voluptatibus numquam tenetur sequi facere corrupti quae dolorum. Est optio
-                fugit provident nesciunt!</p>
-        </section>
-    </article>
+
 
     <footer>
-        <nav>
+        <nav class="social" id="social" >
             <a href="mailto:random@gmail.com">Email</a>
             <a href="https://www.facebook.com" target="_blank">Facebook</a>
             <a href="https://github.com/someone" target="_blank">Github</a>
@@ -135,7 +216,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
     <script src="js/app_script.js"></script>
-
 </body>
 
 </html>

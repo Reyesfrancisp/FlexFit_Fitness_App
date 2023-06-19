@@ -2,18 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
 }
-    /* color: black; */
+ 
+  header {
+    padding: 20px;
+    margin-bottom: 5%;
+  }
 
-.text-center {
+  .review {
     text-align: center;
-}
-
-
-/* This is for the modal style  */
-
-.section-style {
+    margin-top: 25%;
+  }
+  
+  /* This is the inside of the modal */
+  .section-style {
     background: white;
     position: fixed;
     width: 650px;
@@ -21,9 +24,45 @@
     padding: 20px;
 }
 
-html, body {
-    height: 100%;
-   
-   
+/* This is the modal "update" */
+.update {
+position:relative;
+bottom: 75em;
+left: 70em;
+align-items: center;
 
+}
+
+/* Targets the title "Why FlexFit?" */
+.flex1 {
+  margin-top: 90px;
+}
+
+/* Targets the paragraph at the top of the page */
+.flex {
+  padding-right: 500px;
+  /* font-size: large; */
+  color: black;
+  
+}
+
+.background-video{
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
+  object-fit: cover;
+}
+
+/* This is the nav at the bottom of the page */
+.social {
+    display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 5%;
+}
+
+main{
+  height: 400px;
 }
