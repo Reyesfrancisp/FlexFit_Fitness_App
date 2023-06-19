@@ -5,6 +5,56 @@
     font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
 }
 
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-image: url("../images/youtube-at-home-workout-videos-the-10-most-popular-right-now-1606389546.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 20px;
+ 
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+#typeForm, #muscleForm, #difficultyForm, #confirmButton{
+
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  
+
+}
+footer nav a {
+  margin-right: 20px;
+}
+
+
 /* This adds space in between for the nav at the bottom and the dropdown menus */
 .exercises, .social {
   display: flex;
@@ -29,3 +79,4 @@
   margin-left: 43rem;
  font-size: xxx-large;
 }
+
