@@ -120,7 +120,5 @@ function displayData(data) {
     }
 }
 
-
-
 //run after the document is ready
 $(document).ready(pageInitialize);
