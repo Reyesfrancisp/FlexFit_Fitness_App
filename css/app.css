@@ -4,12 +4,26 @@
     box-sizing: border-box;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+    /* color: black; */
 
 .text-center {
     text-align: center;
 }
 
+
+/* This is for the modal style  */
+
+.section-style {
+    background: white;
+    position: fixed;
+    width: 650px;
+    top: 30px;
+    padding: 20px;
+}
+
 html, body {
     height: 100%;
+   
+   
 
 }
