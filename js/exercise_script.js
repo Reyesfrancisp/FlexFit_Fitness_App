@@ -1,7 +1,7 @@
 
 //global scoped variables
 var workoutData;
-
+var dataOutput = document.getElementById('messageBody');
 // get user info from the modal form IDs
 
 function getUserWorkoutInfo() {
@@ -27,8 +27,7 @@ function getUserWorkoutInfo() {
 
 //function to get excercises from API
 
-function getExercises() {
-
+function getExercises(callback) {
     var muscle = workoutData.muscle;
     var type = workoutData.type;
     var difficulty = workoutData.difficulty;
@@ -41,9 +40,9 @@ function getExercises() {
         url: "https://api.api-ninjas.com/v1/exercises?muscle=" + muscle,
         headers: { "X-Api-Key": "uzXoqXKJQzocibLJBGGrFw==5EMXvqAyhQA7R36e" },
         contentType: "application/json",
-        success: function (result) {
+        success: function(result) {
             exerciseByMuscle = result;
-            count = 0;
+            var count = 0;
             while (count < exerciseByMuscle.length) {
                 if (
                     exerciseByMuscle[count].type == type &&
@@ -58,10 +57,6 @@ function getExercises() {
             console.error("Error: ", jqXHR.responseText);
         },
     });
-
-
-    console.log(getExercises());
-
 
     return finalExerciseList;
 }
@@ -79,3 +74,20 @@ function pageInitialize() {
 
 //run after the document is ready
 $(document).ready(pageInitialize());
+
+$("#confirmButton").click(function () {
+    console.log('test');
+    var exercisesListFinal = getExercises();
+    console.log(exercisesListFinal);
+
+
+    displayData(exercisesListFinal);
+
+});
+
+
+function displayData(data)
+{
+    console.log(data);
+    dataOutput.textContent = data[0].name;
+}
