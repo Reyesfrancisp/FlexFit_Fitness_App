@@ -5,7 +5,6 @@
     font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
 }
 
-
 html, body {
   height: 100%;
 }
@@ -18,27 +17,20 @@ body {
   max-width: 100%;
   max-height: 100%;
 }
-
+.has-text-black {
+  color: black;
+}
 main {
   display: flex;
   justify-content: center;
   align-items: center;
-
   margin-top: 5%;
 }
 
-/* footer {
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  padding: 20px;
- 
-} */
-
-
-
+.navbar.is-link {
+  background-color:  rgba(255, 255, 255, 0.5)
+  
+}
 
 #typeForm, #muscleForm, #difficultyForm, #confirmButton{
 
@@ -64,10 +56,12 @@ footer nav a {
   font-size: 2rem;
   font-family: 'Aoboshi One', serif;
   font-weight: 400px;
+  
  }
 
  .navbar-end{
   padding-right: 5%;
+  
  } 
 
 /* This targets the dropdown menus */
@@ -101,8 +95,9 @@ text-decoration: underline;
   justify-content: center;
   text-align: center;
   padding: 2rem;
-
  font-size: xxx-large;
+ background-color:rgba(0, 0, 0, 0.1);
+ color: rgb(34, 30, 30);
 }
 
 #exerciseSection
@@ -113,17 +108,25 @@ text-decoration: underline;
   /* make it flex row at small screens */
 }
 
+
 #messageBody
 {
-  background-color: silver;
+  background-color:rgba(0, 0, 0, 0.1);
+  color: rgb(34, 30, 30);
 }
 
 .footer{
   background-color: transparent;
-  /* position: relative; */
   margin-top: 26%;
   padding-bottom: 0%;
+  margin-top: 200px;
 }
+@media screen and (max-width: 600px) {
+  #exerciseSection {
+    flex-direction: row;
+  }
+}
+
 
 /* responsive at small screen */
 @media (max-width: 800px) {
